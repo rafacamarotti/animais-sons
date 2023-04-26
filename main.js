@@ -32,7 +32,7 @@ function gotResults(error, results){
         img.src='transferir.png';
        
         }else{
-        img.src='alien1.png';
+        img.src='2047484.png';
       
         }
  }
