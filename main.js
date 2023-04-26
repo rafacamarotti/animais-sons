@@ -24,13 +24,13 @@ function gotResults(error, results){
     img= document.getElementById('alien1'); 
   
     if(results[0].label=="latido"){
-        img.src='alien1.gif';
+        img.src='transferir.png';
       
     }else if(results[0].label=="baleia"){
         img.src='alien1.png';
        
         }else if(results[0].label=="sino"){
-        img.src='alien1.png';
+        img.src='transferir.png';
        
         }else{
         img.src='alien1.png';
