@@ -5,6 +5,8 @@ function startclassification(){
 function modelReady(){
     classifier.classify(gotResults);
 }
+cachorro=0;
+baleia=0;
 function gotResults(error, results){
  if(error){
     console.error(error)
@@ -20,29 +22,19 @@ function gotResults(error, results){
     document.getElementById("result_confidence").style.color = "rgb("+random_number_r+","+random_number_g+","+random_number_b+")";
 
     img= document.getElementById('alien1'); 
-    img1= document.getElementById('alien2'); 
-    img2= document.getElementById('alien3'); 
-    img3= document.getElementById('alien4'); 
+  
     if(results[0].label=="latido"){
         img.src='alien1.gif';
-        img1.src='alien2.png';
-        img2.src='alien3.png';
-        img3.src='alien4.png';
+      
     }else if(results[0].label=="baleia"){
         img.src='alien1.png';
-        img1.src='alien2.gif';
-        img2.src='alien3.png';
-        img3.src='alien4.png';
+       
         }else if(results[0].label=="sino"){
         img.src='alien1.png';
-        img1.src='alien2.png';
-        img2.src='alien3.gif';
-        img3.src='alien4.png';
+       
         }else{
         img.src='alien1.png';
-        img1.src='alien2.png';
-        img2.src='alien3.png';
-        img3.src='alien4.gif';
+      
         }
  }
 }
