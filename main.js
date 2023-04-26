@@ -28,7 +28,7 @@ function gotResults(error, results){
     }else if(results[0].label=="baleia"){
         img.src='1808120.png';
        
-        }else if(results[0].label=="sino"){
+        }else if(results[0].label=="gato"){
         img.src='transferir.png';
        
         }else{
