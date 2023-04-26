@@ -26,7 +26,7 @@ function gotResults(error, results){
         img.src='png-transparent-dalmatian-dog-pet-sitting-drawing-frying-pan-miscellaneous-mammal-cat-like-mammal.png';
       
     }else if(results[0].label=="baleia"){
-        img.src='alien1.png';
+        img.src='1808120.png';
        
         }else if(results[0].label=="sino"){
         img.src='transferir.png';
