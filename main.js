@@ -5,8 +5,7 @@ function startclassification(){
 function modelReady(){
     classifier.classify(gotResults);
 }
-cachorro=0;
-baleia=0;
+
 function gotResults(error, results){
  if(error){
     console.error(error)
@@ -24,7 +23,7 @@ function gotResults(error, results){
     img= document.getElementById('alien1'); 
   
     if(results[0].label=="latido"){
-        img.src='transferir.png';
+        img.src='png-transparent-dalmatian-dog-pet-sitting-drawing-frying-pan-miscellaneous-mammal-cat-like-mammal.png';
       
     }else if(results[0].label=="baleia"){
         img.src='alien1.png';
